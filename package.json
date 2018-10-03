@@ -1,5 +1,5 @@
 {
-  "name": "mongodb",
+  "name": "database-testing",
   "version": "1.0.0",
   "description": "mongodb testing",
   "main": "app.js",
@@ -8,15 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fslink/mongodb.git"
+    "url": "git+https://github.com/fslink/database-testing.git"
   },
   "author": "fslink",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fslink/mongodb/issues"
+    "url": "https://github.com/fslink/database-testing/issues"
   },
-  "homepage": "https://github.com/fslink/mongodb#readme",
+  "homepage": "https://github.com/fslink/database-testing#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongodb": "^3.1.6"
   }
 }

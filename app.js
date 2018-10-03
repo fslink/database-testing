@@ -1,9 +1,13 @@
 var express = require('express')
-var mongo = require('mongodb').MongoClient;
+var mongo = require('mongodb').MongoClient
 var url = "mongodb://localhost:27017/testing"
 
-MongoClient.connect(url, function(err, db){
+mongo.connect(url, function(err, db){
 	if (err) throw err
-	console.log("Database created")
-	db.close()
+	var dbo = db.db("testing")
+	dbo.createCollection("motherfuckers", function(err, res){
+		if (err) throw err
+		console.log("Collection of motherfuckers created")
+		db.close()
+	})
 })
